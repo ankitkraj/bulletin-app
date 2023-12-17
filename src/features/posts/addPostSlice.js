@@ -81,8 +81,8 @@ export const postSlice = createSlice({
   },
 });
 
-export default postSlice.reducer;
-export const { postAdded, reactionAdded } = postSlice.actions;
+export default postSlice.reducer; // this would be needed in store
+export const { postAdded, reactionAdded } = postSlice.actions; // this would be needed in components
 
 // export const selectAllPosts = (state) => state.posts;
 // this we can create to modularize the code so if structure is changed of slice only here it is need to be changed
